@@ -11,7 +11,7 @@
   <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/32576525f7.js" crossorigin="anonymous"></script>
   <!-- favicon link -->
-  <link rel="shortcut icon" href="/images/fruit1.png" type="image/x-icon" />
+  <link rel="shortcut icon" href=".images/fruit1.png" type="image/x-icon" />
   <!-- daisyUi and tailwind cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -42,15 +42,14 @@
   <header class="container mx-auto py-5 lg:py-5 md:py-5 px-5 md:px-5 lg:px-10">
     <!-- navbar -->
     <nav class="container mx-auto lg:py-5 lg:px-10">
-      <div
-        class=" relative flex flex-row justify-between items-center md:bg-nav-bg lg:bg-nav-bg rounded-full px-8 py-2">
+      <div class=" relative flex flex-row justify-between items-center lg:bg-nav-bg lg:rounded-full px-8 py-2">
         <div class="text-text-color opacity-0 lg:opacity-100   ">
           <a class="mr-5" href="">Home</a>
           <a class="mr-5" href="">About Us</a>
           <a class="mr-5" href="">Shop</a>
           <a class="mr-5" href="">All Fruits</a>
         </div>
-        <div class="flex flex-row items-center gap-2 lg:left-[45%] absolute">
+        <div class="flex flex-row -ml-8 justify-between items-center lg:left-[45%] absolute">
           <div>
             <img src="./images/logo.png" alt="">
           </div>
@@ -65,38 +64,37 @@
             <input class="rounded-full text-xs w-[55%] md:w-[40%] lg:w-full lg:py-1 lg:px-2 " type="text" name=""
               placeholder="search here " id="">
           </div>
-          <div>
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                </svg>
-              </label>
-              <ul tabindex="0" class="menu menu-sm dropdown-content space-y-3 z-10 text-white px-[23px] pb-5 bg-black">
-                <a href="">Home</a>
-                <a href="">About Us</a>
-                <a href="">Shop</a>
-                <a href="">All Fruits</a>
-              </ul>
-            </div>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content space-y-3 z-10 text-white px-[23px] pb-5 bg-black">
+              <a href="">Home</a>
+              <a href="">About Us</a>
+              <a href="">Shop</a>
+              <a href="">All Fruits</a>
+            </ul>
           </div>
         </div>
-      </div>
       </div>
     </nav>
     <!-- banner section -->
     <section class="lg:px-11 lg:mb-44">
-      <div class="carousel w-full relative rounded-[10px]">
+      <div class="carousel w-full relative">
         <!-- banner-1 -->
-        <div id="slide1" class="carousel-item relative w-full mt-5">
-          <div class="absolute bg-gradient-to-t from-stone-950 w-[100%] h-[100%]"></div>
+        <div id="slide1" class="carousel-item relative mt-5 w-full">
+          <div class="relative rounded-[10px]">
+            <div class="absolute bg-black opacity-50 w-[100%] h-[100%]"></div>
+            <img src="./images/banner1.png" class="w-full z-1 " />
+          </div>
           <div class="absolute text-center w-full top-3 space-y-2 md:top-20 lg:top-[30%] lg:space-y-4">
             <h3 class=" text-2xl md:text-4xl lg:text-6xl text-text-color">Exotic tastes at your <br> doorstep</h3>
             <p class="text-xs text-text-color">We supply highly quality organic products</p>
             <button class="text-text-color text-sm bg-nav-bg py-2 px-5 rounded-lg">Shop Now</button>
           </div>
-          <img src="./images/banner1.png" class="w-full z-1 " />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
@@ -104,13 +102,15 @@
         </div>
         <!-- banner-2 -->
         <div id="slide2" class="carousel-item relative mt-5 w-full">
-          <div class="absolute bg-gradient-to-b from-stone-950 w-[100%] h-[100%]"></div>
+          <div class="relative">
+            <div class="absolute bg-black opacity-50 w-[100%] h-[100%]"></div>
+            <img src="./images/banner2.png" class="w-full" />
+          </div>
           <div class="absolute text-center w-full top-3 space-y-2 md:top-20 lg:top-[30%] lg:space-y-4">
             <h3 class=" text-2xl md:text-4xl lg:text-6xl text-text-color">Exotic tastes at your <br> doorstep</h3>
             <p class="text-xs text-text-color">We supply highly quality organic products</p>
             <button class="text-text-color text-sm bg-nav-bg py-2 px-5 rounded-lg">Shop Now</button>
           </div>
-          <img src="./images/banner2.png" class="w-full" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
@@ -118,13 +118,15 @@
         </div>
         <!-- banner-3 -->
         <div id="slide3" class="carousel-item relative mt-5 w-full">
-          <div class="absolute bg-gradient-to-b from-stone-950 w-[100%] h-[100%]"></div>
+          <div class="relative">
+            <div class="absolute bg-black opacity-50 w-[100%] h-[100%]"></div>
+            <img src="./images/banner3.png" class="w-full" />
+          </div>
           <div class="absolute text-center w-full top-3 space-y-2 md:top-20 lg:top-[30%] lg:space-y-4">
             <h3 class=" text-2xl md:text-4xl lg:text-6xl text-text-color">Exotic tastes at your <br> doorstep</h3>
             <p class="text-xs text-text-color">We supply highly quality organic products</p>
             <button class="text-text-color text-sm bg-nav-bg py-2 px-5 rounded-lg">Shop Now</button>
           </div>
-          <img src="./images/banner3.png" class="w-full" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
@@ -132,13 +134,16 @@
         </div>
         <!-- banner-4 -->
         <div id="slide4" class="carousel-item relative mt-5 w-full">
-          <div class="absolute bg-gradient-to-b from-stone-950 w-[100%] h-[100%]"></div>
+          <div class="relative">
+            <div class="absolute bg-black opacity-50 w-[100%] h-[100%]"></div>
+            <img src="./images/banner4.png" class="w-full " />
+          </div>
           <div class="absolute text-center w-full top-3 space-y-2 md:top-20 lg:top-[30%] lg:space-y-4">
             <h3 class=" text-2xl md:text-4xl lg:text-6xl text-text-color">Exotic tastes at your <br> doorstep</h3>
             <p class="text-xs text-text-color">We supply highly quality organic products</p>
             <button class="text-text-color text-sm bg-nav-bg py-2 px-5 rounded-lg">Shop Now</button>
           </div>
-          <img src="./images/banner4.png" class="w-full " />
+
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
@@ -388,25 +393,30 @@
     </section>
     <!-- expert section -->
     <section class="container mx-auto py-3 md:py-5 px-5 md:px-5 lg:px-20">
-      <div class="relative text-center lg:py-5 h-[1000px] ">
-        <div class="lg:w-[100%] h-[100%] md:h-[55%] lg:h-[60%] absolute bg-gradient-to-t from-stone-950"></div>
-        <img class="h-[100%] md:h-[55%]  lg:h-[60%]" src="./images/team.png" alt="">
+      <div class="relative">
+        <div class="relative text-center h-[900px] md:h-[100%] lg:h-[100%]">
+          <div class="w-[100%] h-[100%] absolute bg-black opacity-70"></div>
+          <img class="w-full h-[900px] md:h-[100%] lg:h-[100%]" src="./images/team.png" alt="">
+        </div>
         <div
-          class="lg:py-5 absolute left-[5%] md:left-[18%] lg:left-[16%] bottom-[1%]  md:bottom-[50%] lg:bottom-[53%]">
-          <div class="py-10 space-y-4">
-            <h3 class="text-lg md:text-3xl lg:text-4xl font-extrabold text-text-color">Meet the team section</h3>
-            <p class="text-xs w-[70%] mx-auto text-text-color">Contrary to popular belief, is not simply random text. It
+          class="lg:py-5 absolute left-[5%] md:bottom-[15%] md:left-[10%] lg:left-[14%] bottom-[5%]  lg:bottom-[20%] ">
+          <div class="py-10 space-y-4 lg:mb-8">
+            <h3 class="text-lg md:text-xl lg:text-3xl font-extrabold text-center text-text-color">Meet the team section
+            </h3>
+            <p class="text-xs w-[70%] mx-auto text-text-color text-center">Contrary to popular belief, is not simply
+              random text. It
               has roots in a
               piece of
               classical <br> Latin
               literature from 45 BC, making it over 2000 years old.</p>
           </div>
-          <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-20 mx-auto">
+          <div
+            class=" flex flex-col md:flex-row md:flex-wrap content-center lg:flex-row gap-3 lg:gap-20 mx-auto text-center ">
             <!-- expert-1 -->
             <div class="space-y-2">
-              <img class="w-[30%] mx-auto" src="./images/member1.png" alt="">
+              <img class=" w-[20%] lg:w-[30%] mx-auto" src="./images/member1.png" alt="">
               <div>
-                <p class="text-xl font-bold text-text-color">Awlad Hossain</p>
+                <p class="text-base md:text-lg lg:text-xl font-bold text-text-color">Awlad Hossain</p>
               </div>
               <div>
                 <p class="text-xs text-text-color">Fruits Expert</p>
@@ -419,9 +429,9 @@
             </div>
             <!-- expert-2 -->
             <div class="space-y-2">
-              <img class="w-[30%] mx-auto" src="./images/member2.png" alt="">
+              <img class="w-[20%] lg:w-[30%] mx-auto" src="./images/member2.png" alt="">
               <div>
-                <p class="text-xl font-bold text-text-color">Safia Chowdhury</p>
+                <p class="text-base md:text-lg lg:text-xl font-bold text-text-color">Safia Chowdhury</p>
               </div>
               <div>
                 <p class="text-xs text-text-color">Fruits Expert</p>
@@ -434,9 +444,9 @@
             </div>
             <!-- expert-3 -->
             <div class="space-y-2">
-              <img class="w-[30%] mx-auto" src="./images/member3.png" alt="">
+              <img class="w-[20%] lg:w-[30%] mx-auto" src="./images/member3.png" alt="">
               <div>
-                <p class="text-xl font-bold text-text-color">Rokib Hossain</p>
+                <p class="text-base md:text-lg lg:text-xl font-bold text-text-color">Rokib Hossain</p>
               </div>
               <div>
                 <p class="text-xs text-text-color">Fruits Expert</p>
@@ -449,9 +459,9 @@
             </div>
             <!-- expert-4 -->
             <div class="space-y-2">
-              <img class="w-[30%] mx-auto" src="./images/member4.png" alt="">
+              <img class="w-[20%] lg:w-[30%] mx-auto" src="./images/member4.png" alt="">
               <div>
-                <p class="text-xl font-bold text-text-color">Chaity</p>
+                <p class="text-base md:text-lg lg:text-xl font-bold text-text-color">Chaity</p>
               </div>
               <div>
                 <p class="text-xs text-text-color">Fruits Expert</p>
@@ -467,7 +477,7 @@
       </div>
     </section>
     <!-- why choose section -->
-    <section class="container mx-auto md:mt-[-55%] lg:mt-[-25%] px-5 md:px-5 lg:px-20">
+    <section class="container mx-auto px-5 md:px-5 lg:px-20">
       <div class="text-center space-y-4">
         <h2 class="text-xl md:text-3xl lg:text-5xl font-extrabold">Why Choose Us</h2>
         <p class="text-xs">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
@@ -528,7 +538,7 @@
         </div>
         <!-- Integrated Supplier part-->
         <div class="space-y-8">
-          <div class="flex flex-col gap-3  md:flex-col lg:flex-row space-x-4 justify-start items-center">
+          <div class="flex flex-col-reverse gap-3 md:flex-col-reverse lg:flex-row space-x-4 justify-start items-center">
             <div class="space-y-2">
               <h2 class="text-xl md:text-xl lg:text-2xl font-extrabold text-center lg:text-end">Integrated
                 Supplier</h2>
@@ -544,7 +554,8 @@
             </div>
           </div>
           <!-- Sustainable Practice part -->
-          <div class="flex flex-col gap-3 md:flex-col lg:flex-row space-x-4  justify-start items-center">
+          <div
+            class="flex flex-col-reverse gap-3 md:flex-col-reverse lg:flex-row space-x-4  justify-start items-center">
             <div class="space-y-2">
               <h2 class="text-xl md:text-xl lg:text-2xl font-extrabold text-center lg:text-end">Sustainable Practice
               </h2>
@@ -560,7 +571,7 @@
             </div>
           </div>
           <!-- The Benefits Only part -->
-          <div class="flex flex-col gap-3 md:flex-col lg:flex-row space-x-4 justify-st items-center">
+          <div class="flex flex-col-reverse gap-3 md:flex-col-reverse lg:flex-row space-x-4 justify-st items-center">
             <div class="space-y-2">
               <h2 class="text-xl md:text-xl lg:text-2xl font-extrabold text-center lg:text-end">The Benefits Only</h2>
               <hr class="w-28 mx-auto lg:ml-[63%]">
