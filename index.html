@@ -69,13 +69,16 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
                 </svg>
               </label>
-              <ul tabindex="0" class="menu menu-sm dropdown-content z-1  bg-black">
-                <li><a class=" text-text-color">Item 1</a></li>
-
-              </ul>
+              <ul tabindex="0" class="menu menu-sm dropdown-content z-10 text-white bg-black">
+                <a class="" href="">Home</a>
+                <a class="" href="">About Us</a>
+                <a class="" href="">Shop</a>
+                <a class="" href="">All Fruits</a>
             </div>
+            </ul>
           </div>
         </div>
+      </div>
       </div>
     </nav>
     <!-- banner section -->
@@ -83,13 +86,13 @@
       <div class="carousel w-full relative ">
         <!-- banner-1 -->
         <div id="slide1" class="carousel-item relative w-full mt-5 rounded-3xl">
-          <div class="absolute bg-gradient-to-b from-stone-950 w-[100%] h-[100%]"></div>
+          <div class="absolute bg-gradient-to-t from-stone-950 w-[100%] h-[100%]"></div>
           <div class="absolute text-center w-full top-3 space-y-2 md:top-20 lg:top-[30%] lg:space-y-4">
             <h3 class=" text-2xl md:text-4xl lg:text-6xl text-text-color">Exotic tastes at your <br> doorstep</h3>
             <p class="text-xs text-text-color">We supply highly quality organic products</p>
             <button class="text-text-color text-sm bg-nav-bg py-2 px-5 rounded-lg">Shop Now</button>
           </div>
-          <img src="/images/banner1.png" class="w-full" />
+          <img src="/images/banner1.png" class="w-full z-1 " />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
@@ -174,21 +177,22 @@
     </section>
   </header>
   <main>
-    <section class="container mx-auto py-5 lg:py-5  md:py-5 px-5 md:px-5 lg:px-10">
-      <div class="flex flex-col lg:flex-row justify-between">
-        <div class="space-y-3">
-          <h2 class="text-5xl font-extrabold">Deal of the day</h2>
-          <p class="text-xs">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
-            <br>
+    <section class="container mx-auto py-3   md:py-5 px-5 md:px-5 lg:px-10">
+      <div
+        class="flex  flex-col md:flex-row lg:flex-row justify-between items-center lg:py-5 lg:px-11 text-center py-4">
+        <div class="space-y-3 ">
+          <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold ">Deal of the day</h2>
+          <p class="text-xs">Contrary to popular belief, is not simply <br> random text. It has roots in a piece of<br>
+            classical
             Latin
             literature
-            from 45 BC, making it over 2000 years old.
+            from 45 BC, making<br> it over 2000 years old.
           </p>
         </div>
-        <div class="flex flex-row gap-4 text-center">
+        <div class="flex  flex-row gap-4 my-4 ">
           <div class="flex flex-row gap-3">
             <div>
-              <h2 class="text-4xl font-extrabold">29</h2>
+              <h2 class="text-xl md:text-3xl lg:text-4xl font-extrabold">29</h2>
               <p class="text-xs">Days</p>
             </div>
             <div>
@@ -197,7 +201,7 @@
           </div>
           <div class="flex flex-row gap-3">
             <div>
-              <h2 class="text-4xl font-extrabold">15</h2>
+              <h2 class="text-xl md:text-3xl lg:text-4xl font-extrabold">15</h2>
               <p class="text-xs">Hours</p>
             </div>
             <div>
@@ -206,7 +210,7 @@
           </div>
           <div class="flex flex-row gap-3">
             <div>
-              <h2 class="text-4xl font-extrabold">25</h2>
+              <h2 class="text-xl md:text-3xl lg:text-4xl font-extrabold">25</h2>
               <p class="text-xs">Hours</p>
             </div>
             <div>
@@ -214,13 +218,14 @@
             </div>
           </div>
           <div>
-            <h2 class="text-4xl font-extrabold">08</h2>
+            <h2 class="text-xl md:text-3xl lg:text-4xl font-extrabold">08</h2>
             <p class="text-xs">Seconds</p>
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center justify-between items-center lg:py-8">
-        <div class="space-y-5 border-2 border-slate-100">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center justify-around items-center py-10 md::py-10 lg:py-10 gap-4 ">
+        <div class="space-y-5 border-2 border-slate-100 py-10">
           <img class="w-[20%] mx-auto" src="/images/fruit6.png" alt="">
           <p>12.90$ - 18.85$</p>
           <p>Apples</p>
@@ -233,24 +238,36 @@
             <i class="fa-regular fa-star-half-stroke"></i>
           </div>
           <!-- Open the modal using ID.showModal() method -->
-          <button class="text-xs text-nav-bg" onclick="my_modal_1.showModal()">Details</button>
-          <dialog id="my_modal_1" class="modal">
+          <button class="text-nav-bg text-sm py-2 px-5 rounded-lg" onclick="my_modal_1.showModal()">Details</button>
+          <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
             <form method="dialog" class="modal-box">
-              <h3 class="font-bold text-lg">Welcome</h3>
-              <p class="py-4">Fruit provides vitamins, minerals, dietary fibre and plant chemicals called phytonutrients
-                that help to keep us healthy and protect against chronic diseases such as heart disease, diabetes,
-                stroke and some types of cancers</p>
+              <div class="space-y-5">
+                <img class="w-[20%] mx-auto" src="/images/fruit6.png" alt="">
+                <p>12.90$ - 18.85$</p>
+                <p>Apples</p>
+                <hr class="w-28 mx-auto">
+                <div class="text-nav-bg">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <!-- if there is a button in form, it will close the modal -->
               <div class="modal-action">
-                <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close</button>
+                <div class="w-full mx-auto">
+                  <button class="rounded-md shadow-lg py-2 border-gray-200 border-2 px-4 text-xs">Close</button>
+                  <button class="ml-2 text-text-color text-sm bg-nav-bg py-2 px-5 rounded-lg">Buy Now</button>
+                </div>
               </div>
             </form>
           </dialog>
         </div>
-        <div class="space-y-5">
-          <img class="w-[20%] mx-auto" src="/images/fruit6.png" alt="">
+        <div class="space-y-5 border-2 border-slate-100 py-10">
+          <img class="w-[20%] mx-auto" src="/images/fruit7.png" alt="">
           <p>12.90$ - 18.85$</p>
-          <p>Apples</p>
+          <p>Orange</p>
           <hr class="w-28 mx-auto">
           <div class="text-nav-bg">
             <i class="fa-solid fa-star"></i>
@@ -260,24 +277,35 @@
             <i class="fa-regular fa-star-half-stroke"></i>
           </div>
           <!-- Open the modal using ID.showModal() method -->
-          <button class="text-xs text-nav-bg" onclick="my_modal_1.showModal()">Details</button>
-          <dialog id="my_modal_1" class="modal">
+          <button class="text-nav-bg text-sm py-2 px-5 rounded-lg" onclick="my_modal_2.showModal()">Details</button>
+          <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
             <form method="dialog" class="modal-box">
-              <h3 class="font-bold text-lg">Welcome</h3>
-              <p class="py-4">Fruit provides vitamins, minerals, dietary fibre and plant chemicals called phytonutrients
-                that help to keep us healthy and protect against chronic diseases such as heart disease, diabetes,
-                stroke and some types of cancers</p>
+              <div class="space-y-5">
+                <img class="w-[20%] mx-auto" src="/images/fruit7.png" alt="">
+                <p>12.90$ - 18.85$</p>
+                <p>Orange</p>
+                <hr class="w-28 mx-auto">
+                <div class="text-nav-bg">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+              </div>
               <div class="modal-action">
-                <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close</button>
+                <div class="w-full mx-auto">
+                  <button class="rounded-md shadow-lg py-2 border-gray-200 border-2 px-4 text-xs">Close</button>
+                  <button class="ml-2 text-text-color text-sm bg-nav-bg py-2 px-5 rounded-lg">Buy Now</button>
+                </div>
               </div>
             </form>
           </dialog>
         </div>
-        <div class="space-y-5">
-          <img class="w-[20%] mx-auto" src="/images/fruit6.png" alt="">
+        <div class="space-y-5 border-2 border-slate-100 py-10">
+          <img class="w-[20%] mx-auto" src="/images/fruit8.png" alt="">
           <p>12.90$ - 18.85$</p>
-          <p>Apples</p>
+          <p>Red Dragon</p>
           <hr class="w-28 mx-auto">
           <div class="text-nav-bg">
             <i class="fa-solid fa-star"></i>
@@ -287,24 +315,35 @@
             <i class="fa-regular fa-star-half-stroke"></i>
           </div>
           <!-- Open the modal using ID.showModal() method -->
-          <button class="text-xs text-nav-bg" onclick="my_modal_1.showModal()">Details</button>
-          <dialog id="my_modal_1" class="modal">
+          <button class="text-nav-bg text-sm py-2 px-5 rounded-lg" onclick="my_modal_3.showModal()">Details</button>
+          <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
             <form method="dialog" class="modal-box">
-              <h3 class="font-bold text-lg">Welcome</h3>
-              <p class="py-4">Fruit provides vitamins, minerals, dietary fibre and plant chemicals called phytonutrients
-                that help to keep us healthy and protect against chronic diseases such as heart disease, diabetes,
-                stroke and some types of cancers</p>
+              <div class="space-y-5">
+                <img class="w-[20%] mx-auto" src="/images/fruit8.png" alt="">
+                <p>12.90$ - 18.85$</p>
+                <p>Red Dragon</p>
+                <hr class="w-28 mx-auto">
+                <div class="text-nav-bg">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+              </div>
               <div class="modal-action">
-                <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close</button>
+                <div class="w-full mx-auto">
+                  <button class="rounded-md shadow-lg py-2 border-gray-200 border-2 px-4 text-xs">Close</button>
+                  <button class="ml-2 text-text-color text-sm bg-nav-bg py-2 px-5 rounded-lg">Buy Now</button>
+                </div>
               </div>
             </form>
           </dialog>
         </div>
-        <div class="space-y-5">
-          <img class="w-[20%] mx-auto" src="/images/fruit6.png" alt="">
+        <div class="space-y-5 border-2 border-slate-100 py-10">
+          <img class="w-[20%] mx-auto" src="/images/fruit9.png" alt="">
           <p>12.90$ - 18.85$</p>
-          <p>Apples</p>
+          <p>Banana</p>
           <hr class="w-28 mx-auto">
           <div class="text-nav-bg">
             <i class="fa-solid fa-star"></i>
@@ -314,19 +353,139 @@
             <i class="fa-regular fa-star-half-stroke"></i>
           </div>
           <!-- Open the modal using ID.showModal() method -->
-          <button class="text-xs text-nav-bg" onclick="my_modal_1.showModal()">Details</button>
-          <dialog id="my_modal_1" class="modal">
+          <button class="text-nav-bg text-sm py-2 px-5 rounded-lg" onclick="my_modal_4.showModal()">Details</button>
+          <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
             <form method="dialog" class="modal-box">
-              <h3 class="font-bold text-lg">Welcome</h3>
-              <p class="py-4">Fruit provides vitamins, minerals, dietary fibre and plant chemicals called phytonutrients
-                that help to keep us healthy and protect against chronic diseases such as heart disease, diabetes,
-                stroke and some types of cancers</p>
+              <div class="space-y-5">
+                <img class="w-[20%] mx-auto" src="/images/fruit9.png" alt="">
+                <p>12.90$ - 18.85$</p>
+                <p>Banana</p>
+                <hr class="w-28 mx-auto">
+                <div class="text-nav-bg">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+              </div>
               <div class="modal-action">
-                <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close</button>
+                <div class="w-full mx-auto">
+                  <button class="rounded-md shadow-lg py-2 border-gray-200 border-2 px-4 text-xs">Close</button>
+                  <button class="ml-2 text-text-color text-sm bg-nav-bg py-2 px-5 rounded-lg">Buy Now</button>
+                </div>
               </div>
             </form>
           </dialog>
+        </div>
+      </div>
+      <div class="flex justify-center items-center"><button
+          class="text-text-color text-sm bg-nav-bg py-2 px-5 rounded-lg">Shop All</button></div>
+    </section>
+    <!-- expert section -->
+    <section class="container mx-auto py-3 md:py-5 px-5 md:px-5 lg:px-10">
+      <div class="relative text-center lg:py-5 h-[1000px]">
+        <div class="w-[100%] h-[100%] md:h-[55%] lg:h-[60%] absolute bg-gradient-to-t from-stone-950"></div>
+        <img class="h-[100%] md:h-[55%] lg:h-[60%]" src="/images/team.png" alt="">
+        <div
+          class="lg:py-5 absolute left-[5%] md:left-[18%] lg:left-[16%] bottom-[1%]  md:bottom-[50%] lg:bottom-[53%]">
+          <div class="py-10 space-y-4">
+            <h3 class="text-lg md:text-3xl lg:text-4xl font-extrabold text-text-color">Meet the team section</h3>
+            <p class="text-xs w-[70%] mx-auto text-text-color">Contrary to popular belief, is not simply random text. It
+              has roots in a
+              piece of
+              classical <br> Latin
+              literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-20 mx-auto">
+            <!-- expert-1 -->
+            <div class="space-y-2">
+              <img class="w-[30%] mx-auto" src="/images/member1.png" alt="">
+              <div>
+                <p class="text-xl font-bold text-text-color">Awlad Hossain</p>
+              </div>
+              <div>
+                <p class="text-xs text-text-color">Fruits Expert</p>
+              </div>
+              <div class="">
+                <i class="fa-brands mr-3 rounded-full text-white bg-nav-bg fa-facebook"></i>
+                <i class="fa-brands mr-3 rounded-full text-white bg-nav-bg fa-twitter"></i>
+                <i class="fa-brands  mr-3 rounded-full text-white bg-nav-bg fa-linkedin-in"></i>
+              </div>
+            </div>
+            <!-- expert-2 -->
+            <div class="space-y-2">
+              <img class="w-[30%] mx-auto" src="/images/member2.png" alt="">
+              <div>
+                <p class="text-xl font-bold text-text-color">Safia Chowdhury</p>
+              </div>
+              <div>
+                <p class="text-xs text-text-color">Fruits Expert</p>
+              </div>
+              <div class="">
+                <i class="fa-brands mr-3 rounded-full text-white bg-nav-bg fa-facebook"></i>
+                <i class="fa-brands mr-3 rounded-full text-white bg-nav-bg fa-twitter"></i>
+                <i class="fa-brands mr-3 rounded-full text-white bg-nav-bg fa-linkedin-in"></i>
+              </div>
+            </div>
+            <!-- expert-3 -->
+            <div class="space-y-2">
+              <img class="w-[30%] mx-auto" src="/images/member3.png" alt="">
+              <div>
+                <p class="text-xl font-bold text-text-color">Rokib Hossain</p>
+              </div>
+              <div>
+                <p class="text-xs text-text-color">Fruits Expert</p>
+              </div>
+              <div class="">
+                <i class="fa-brands mr-3 rounded-full text-white bg-nav-bg fa-facebook"></i>
+                <i class="fa-brands mr-3 rounded-full text-white bg-nav-bg fa-twitter"></i>
+                <i class="fa-brands mr-3  rounded-full text-white bg-nav-bg fa-linkedin-in"></i>
+              </div>
+            </div>
+            <!-- expert-4 -->
+            <div class="space-y-2">
+              <img class="w-[30%] mx-auto" src="/images/member4.png" alt="">
+              <div>
+                <p class="text-xl font-bold text-text-color">Chaity</p>
+              </div>
+              <div>
+                <p class="text-xs text-text-color">Fruits Expert</p>
+              </div>
+              <div class="">
+                <i class="fa-brands mr-3 rounded-full text-white bg-nav-bg fa-facebook"></i>
+                <i class="fa-brands mr-3 rounded-full text-white bg-nav-bg fa-twitter"></i>
+                <i class="fa-brands mr-3 rounded-full text-white bg-nav-bg fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto py-3 md:py-5 px-5 md:px-5 lg:px-10">
+      <div>
+<h2>Why Choose Us</h2>
+<p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+      <div>
+        <div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div>
+
+        </div>
+        <div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
         </div>
       </div>
     </section>
